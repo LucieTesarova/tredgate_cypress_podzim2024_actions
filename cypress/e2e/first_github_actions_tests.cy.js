@@ -8,5 +8,6 @@ describe("Cypress GitHub Actions Demo", () => {
   it("Pmtool Login Title Exist", () => {
     cy.visit("https://tredgate.com/pmtool");
     cy.get("h3.form-title").should("exist");
+    cy.get("h3.form-title").should("be.visible");
   });
 });
